@@ -1,0 +1,7 @@
+.displayBox{
+    border-radius: 12px;
+    justify-items: center;
+    background-color: #2F3332;
+    height: 20%;
+    width: 100%;
+}
