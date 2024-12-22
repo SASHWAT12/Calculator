@@ -1,9 +1,10 @@
 import React from "react";
+import "./index.css";
 
-const CustomButtons = ({label})=>{
+const CustomButtons = ({label,className})=>{
     return(
-        <div>
-            <h1>{label}</h1>
+        <div className={`buttonContainer ${className || ""}`}>
+            <button >{label}</button>
         </div>
     );
 };

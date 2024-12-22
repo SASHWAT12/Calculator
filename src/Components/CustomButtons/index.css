@@ -1,0 +1,38 @@
+.buttonContainer{
+    padding: 1rem;
+}
+.buttonContainer button{
+    font-size: 2rem;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.large {
+    grid-column: span 2;
+    font-size: 1.8rem;
+}
+
+.buttonContainer button:hover {
+    background-color: #e0e0e0;
+}
+  
+.equal button{
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+  
+.clear button{
+    background-color: #f44336;
+    color: white;
+}
+  
+.operator button{
+    background-color: #ff9800;
+    color: white;
+}

@@ -3,24 +3,25 @@ import "./index.css";
 import CustomButtons from "../CustomButtons";
 
 const Keypad = () => {
-    const buttons = ['7','8','9','/',
-                     '4','5','6','*',
-                     '1','2','3','-',
-                     '0',',','+','=',
-                     'AC'];
-
+    const buttons = [
+        { label: "7" }, { label: "8" }, { label: "9" }, { label: "/", className:"operator" },
+        { label: "4" }, { label: "5" }, { label: "6" }, { label: "*", className:"operator" },
+        { label: "1" }, { label: "2" }, { label: "3" }, { label: "-", className:"operator" },
+        { label: "0", className: "large" }, { label: "." }, { label: "+", className:"operator" }, { label: "=", className:"equal" },
+        { label: "AC", className: "clear" }
+      ];
     return (
         <div className="keypadBox">
-            {buttons.map((btn)=>
+            {buttons.map((btn,index)=>
                 (
                     <CustomButtons
-                    key={btn} 
-                    label={btn} 
+                    key={index} 
+                    label={btn.label}
+                    className={btn.className}
                     />
-                )
-            )};
+                ))}
         </div>
     );
-}
+};
 
 export default Keypad;

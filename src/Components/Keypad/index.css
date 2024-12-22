@@ -3,4 +3,6 @@
     background-color: #2F3332;
     height: 80%;
     width: 100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
 }
