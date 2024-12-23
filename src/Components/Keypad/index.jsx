@@ -2,7 +2,9 @@ import React from "react";
 import "./index.css";
 import CustomButtons from "../CustomButtons";
 
-const Keypad = () => {
+const Keypad = ({handleClick}) => {
+    
+    
     const buttons = [
         { label: "7" }, { label: "8" }, { label: "9" }, { label: "/", className:"operator" },
         { label: "4" }, { label: "5" }, { label: "6" }, { label: "*", className:"operator" },
@@ -18,6 +20,7 @@ const Keypad = () => {
                     key={index} 
                     label={btn.label}
                     className={btn.className}
+                    onClick={() => handleClick(btn.label)}
                     />
                 ))}
         </div>

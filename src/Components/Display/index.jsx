@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 
-const Display = () => {
-    const [value,setValue] = useState("");
+const Display = ({value}) => {
+    
     return(
         <div className="displayBox">
             <div className="numberValue">

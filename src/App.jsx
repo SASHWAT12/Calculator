@@ -1,6 +1,5 @@
 import './App.css';
-import Display from './Components/Display';
-import Keypad from './Components/Keypad';
+import Calculator from './Components/Calculator';
 
 function App() {
   return (
@@ -9,11 +8,7 @@ function App() {
         <h1>Calculator</h1>
       </header>
       <main>
-        <div className='calculator'>
-          <Display />
-          <br />
-          <Keypad />
-        </div>
+       <Calculator />
       </main>
     </div>
   );

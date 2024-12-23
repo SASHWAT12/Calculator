@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
 
-const CustomButtons = ({label,className})=>{
+const CustomButtons = ({label,className,onClick})=>{
     return(
         <div className={`buttonContainer ${className || ""}`}>
-            <button >{label}</button>
+            <button onClick={onClick}>{label}</button>
         </div>
     );
 };
