@@ -6,7 +6,18 @@ import Keypad from '../Keypad';
 const Calculator = () =>{
   const [value,setValue] = useState("");
   const handleClick = (inputVal) =>{
-    setValue(inputVal);
+    if (inputVal === "AC") {
+      setValue("");
+    }
+    else if (inputVal === "=") {
+        try {
+            setValue(eval(value).toString());
+        } catch (error) {
+            setValue("Error");
+        }
+    } else {
+        setValue(prevValue => prevValue + inputVal);
+    }
   }
     return (
         <div className='calculator'>
